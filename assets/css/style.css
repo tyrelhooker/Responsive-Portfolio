@@ -260,17 +260,28 @@ input[type=submit] {
 
 @media screen and (max-width: 980px) {
   .container {
-    width: 80%;
+    width: 100%;
   }
 
   .main-section {
-    width: 60%
+    width: 60%;
+    margin-left: 2.5%;
+    margin-right: auto;
   }
 
   .sidebar {
     width: 40%;
-    float: left;
-    margin-left: 5%;
+    float: right;
+    margin-left: auto;
+    margin-right: 2.5%;
+  }
+
+  .name-box{
+    margin-left: 20px;
+  }
+
+  nav {
+    margin-right: 40px;
   }
 
   #bio-image {
@@ -294,6 +305,7 @@ input[type=submit] {
 
   .main-section {
     min-width: 100%;
+    margin: auto;
   }
 
   #bio-image {
@@ -306,6 +318,7 @@ input[type=submit] {
   .sidebar {
     min-width: 100%;
     float: right;
+    margin: 5% auto 5% auto;
   }
 }
 
@@ -314,9 +327,15 @@ input[type=submit] {
     width: 100%;
   }
 
+  .main-section {
+    min-width: 100%;
+    margin: 5% auto 5% auto;
+  }
+
   .sidebar {
     min-width: 100%;
     float: right;
+    margin: auto auto 5% auto;
   }
 
   .main-header {
@@ -336,10 +355,10 @@ input[type=submit] {
     padding: 0px;
     margin: 5px;
   }
-  
+/*   
   #main-container {
     padding-top: 150px;
-  }
+  } */
 
   #bio-image {
     width: 100%;
