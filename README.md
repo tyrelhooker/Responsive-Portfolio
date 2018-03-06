@@ -1,9 +1,9 @@
-# Basic-Portfolio
+By: T.J. Hooker
+Date: March 6, 2018
 
-Author: TJ Hooker
-Date: February 25, 2018
+The Portfolio is made with Media Queries and is designed to be identical to the basic portfolio, but more responsive to media window sizes. 
 
-The Basic Portfolio contains 4 html files:
+The Portfolio contains 4 html files:
     index.html
     portfolio.html
     contact.html

@@ -10,6 +10,7 @@ body {
   box-sizing: border-box;
 }
 
+
 /* general */
 
 .container {
@@ -86,6 +87,7 @@ h3 {
 
 nav a:hover {
   border-bottom: 3px solid #cc5500;
+  
 }
 
 nav {
@@ -119,6 +121,28 @@ footer {
   background: #666;
   border-top: 8px solid #4aaaa5;
 }
+
+/* sticky footer styling */
+
+/* https://css-tricks.com/snippets/css/sticky-footer/ */
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto -105px;
+}
+
+footer,
+.push {
+  height: 105px;
+}
+
+/* end sticky footer styling */
 
 /* sidebar */
 
@@ -209,12 +233,11 @@ h3,
 }
 
 /* Creats a frame around the main-content image when the mouse hovers over it */
+
 #bio-image:hover {
   outline: 3px solid gray;
   outline-offset: 7px;
 }
-
-
 
 /* contact page */
 
@@ -256,7 +279,7 @@ input[type=submit] {
   border: 0 none;
 }
 
-/* RESPONSIVE DESIGN USING MEDIA QUERY */
+/*-------------- RESPONSIVE DESIGN USING MEDIA QUERY------------------------- */
 
 @media screen and (max-width: 980px) {
   .container {
@@ -294,18 +317,21 @@ input[type=submit] {
   .work {
     width: 100%;
   }
-  
 }
 
 @media screen and (max-width: 768px) {
   .container {
     width: 100%;
-    padding: 0 20px;
+    /* padding: 0 20px; */
   }
 
   .main-section {
     min-width: 100%;
     margin: auto;
+  }
+
+  #main-container {
+    padding: 140px 20px 10px 20px;
   }
 
   #bio-image {
@@ -343,6 +369,10 @@ input[type=submit] {
     padding: 0px;
   }
 
+  #main-container {
+    padding: 140px 20px 10px 20px;
+  }
+
   .name-box{
     width: 100%;
     margin: 0px;
@@ -355,10 +385,6 @@ input[type=submit] {
     padding: 0px;
     margin: 5px;
   }
-/*   
-  #main-container {
-    padding-top: 150px;
-  } */
 
   #bio-image {
     width: 100%;
